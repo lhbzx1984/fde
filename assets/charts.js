@@ -1,4 +1,5 @@
 (function() {
+  function initCharts() {
   var style = getComputedStyle(document.documentElement);
   var accent = style.getPropertyValue('--accent').trim();
   var accent2 = style.getPropertyValue('--accent2').trim();
@@ -72,5 +73,11 @@
       }
     });
     window.addEventListener('resize', function() { radarChart.resize(); });
+  }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCharts);
+  } else {
+    initCharts();
   }
 })();

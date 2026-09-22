@@ -888,11 +888,11 @@ ul.flat li::before { content: '\2022'; position: absolute; left: 0; color: var(-
     <figure class="diagram">
       <pre class="mermaid">
 flowchart LR
-    A["客户现场<br>4-8 周"] --> B["摸透工作流<br>找到痛点"]
-    B --> C["当场写代码<br>集成老系统"]
-    C --> D["部署上线<br>修 bug"]
-    D --> E["交付能用<br>的东西"]
-    E --> F["核心团队<br>提炼成标准产品"]
+    A["客户现场<br/>4-8 周"] --> B["摸透工作流<br/>找到痛点"]
+    B --> C["当场写代码<br/>集成老系统"]
+    C --> D["部署上线<br/>修 bug"]
+    D --> E["交付能用<br/>的东西"]
+    E --> F["核心团队<br/>提炼成标准产品"]
     F -->|反哺| A
 
     style A fill:#4f46e5,stroke:none,color:#fff
@@ -2095,12 +2095,11 @@ flowchart LR
 </footer>
 
 <!-- ========== SCRIPTS ========== -->
-<script src="./_shared/js/echarts.min.js"></script>
-<script src="./_shared/js/mermaid.min.js"></script>
+<script src="_shared/js/echarts.min.js"></script>
+<script src="_shared/js/mermaid.min.js"></script>
 <script>
 mermaid.initialize({ startOnLoad: true, theme: 'neutral', securityLevel: 'loose' });
 </script>
-<script src="assets/charts.js"></script>
 <script>
 // === 面试 Q&A 标签切换 ===
 (function() {
@@ -2119,5 +2118,6 @@ mermaid.initialize({ startOnLoad: true, theme: 'neutral', securityLevel: 'loose'
   });
 })();
 </script>
+<script src="assets/charts.js"></script>
 </body>
 </html>
